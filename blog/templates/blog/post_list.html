@@ -10,16 +10,12 @@
         <h1><a href="/">Blog Maria Fernanda</a></h1>
     </div>
 
+    {% for post in posts %}
     <div>
-        <p>publicado: 16.11.2024, 15:03</p>
-        <h2><a href="">Meu primeiro post</a></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsam doloremque maxime rem sunt, porro vero aperiam incidunt exercitationem sint, et aspernatur nulla, eos ad. Explicabo ea sapiente rerum fugit?</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-
-    <div>
-        <p>publicado: 16.11.2024, 15:30</p>
-        <h2><a href="">Meu segundo post</a></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas sit quidem, magnam nobis accusamus atque libero! Iusto commodi, fugiat minus culpa velit consequuntur eligendi dolore molestiae perspiciatis assumenda quos.</p>
-    </div>
+    {% endfor %}
 </body>
 </html>

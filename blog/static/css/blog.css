@@ -3,6 +3,10 @@ h1 a, h2 a {
     font-family: 'Poppins';
 }
 
+body {
+    padding-bottom: 5px;
+}
+
 .page-header {
     background-color: #003ac2;
     margin-top: 0;
